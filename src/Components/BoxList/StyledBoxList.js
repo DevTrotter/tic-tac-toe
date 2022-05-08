@@ -9,4 +9,8 @@ export const StyledBoxList = styled.div`
   align-items: center;
   justify-items: center;
   justify-content: center;
+  svg {
+    width: 100px;
+    height: 100px;
+  }
 `;
