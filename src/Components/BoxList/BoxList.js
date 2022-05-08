@@ -14,12 +14,14 @@ export const BoxList = () => {
     "",
     "",
   ]);
+  const [player, setPlayer] = useState("x");
   return (
     <StyledBoxList>
       {playground?.map((box, boxNumber) => (
         <Box
           key={boxNumber}
-          markPlayer={box}
+          player={player}
+          setPlayer={setPlayer}
           setPlayground={setPlayground}
           boxNumber={boxNumber}
         />
