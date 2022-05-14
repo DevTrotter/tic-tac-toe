@@ -5,6 +5,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+import { Game } from "../Pages/Game/Game";
 import { Home } from "../Pages/Home/Home";
 
 export const Index = () => {
@@ -12,6 +13,7 @@ export const Index = () => {
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/duo" element={<Game />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>

@@ -24,7 +24,7 @@ export const Box = ({
     const playerWin = checkWin(player, newPlayground);
     setTimeout(() => {
       if (playerWin) alert(`Player ${player.toUpperCase()} is win !`);
-    }, 1000);
+    }, 300);
   };
 
   return <StyledBox onClick={handleClick}>{value}</StyledBox>;
