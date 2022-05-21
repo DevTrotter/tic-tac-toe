@@ -9,14 +9,16 @@ export const Home = () => {
   return (
     <Layout>
       <StyledHome>
-        <h1>Bienvenu !!!!</h1>
-        <div>
-          <h1>Menu (Choisissez un mode de jeu !)</h1>
+        <div className="container-home">
+          <h1>Menu</h1>
+          <span>(Choisissez un mode de jeu...)</span>
           <nav>
             <ul>
               <li>
-                <FaRobot />
-                Solo
+                <Link to="/">
+                  <FaRobot />
+                  Solo
+                </Link>
               </li>
               <li>
                 <Link to="/duo">
