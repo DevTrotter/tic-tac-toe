@@ -31,6 +31,10 @@ export const StyledHome = styled.section`
     line-height: 36px;
   }
 
+  .disabled {
+    opacity: 0.6;
+  }
+
   .container-home {
     display: flex;
     flex-direction: column;
@@ -66,7 +70,6 @@ export const StyledHome = styled.section`
             justify-content: center;
             text-decoration: none;
             color: white;
-
             svg {
               margin: 0 12px;
             }

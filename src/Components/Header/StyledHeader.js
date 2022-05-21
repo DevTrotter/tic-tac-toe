@@ -25,6 +25,18 @@ const StyledHeader = styled.header`
     line-height: 36px;
     text-decoration: none;
   }
+
+  @media (max-width: 1300px) {
+    width: 60%;
+  }
+
+  @media (max-width: 500px) {
+    padding: 12px 12px;
+    a {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
 `;
 
 export default StyledHeader;
