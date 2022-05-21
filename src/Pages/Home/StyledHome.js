@@ -31,17 +31,47 @@ export const StyledHome = styled.section`
     line-height: 36px;
   }
 
-  nav {
+  .container-home {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    ul {
-      list-style: none;
-      li {
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 36px;
+    justify-content: center;
+    background-color: #232323;
+    border-radius: 24px;
+    padding: 24px;
+    border: 1px solid white;
+
+    span {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      ul {
+        list-style: none;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 300;
+          font-size: 24px;
+          line-height: 36px;
+          margin: 12px 0px;
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+
+            svg {
+              margin: 0 12px;
+            }
+          }
+        }
       }
     }
   }
