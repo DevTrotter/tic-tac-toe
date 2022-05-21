@@ -13,6 +13,7 @@ const StyledHeader = styled.header`
   border-radius: 0 0 24px 24px;
   border: 1px solid white;
   border-top: 0;
+  z-index: 1;
 
   a {
     font-family: "Poppins";
