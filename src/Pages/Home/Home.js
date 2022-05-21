@@ -14,7 +14,7 @@ export const Home = () => {
           <span>(Choisissez un mode de jeu...)</span>
           <nav>
             <ul>
-              <li>
+              <li className="disabled">
                 <Link to="/">
                   <FaRobot />
                   Solo

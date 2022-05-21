@@ -24,6 +24,21 @@ const StyledScoreboard = styled.div`
     align-items: center;
     justify-content: center;
   }
+
+  @media (max-width: 1300px) {
+    width: 50%;
+  }
+
+  @media (max-width: 500px) {
+    width: 30%;
+    top: 49px;
+    font-size: 14px;
+    line-height: 14px;
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
 `;
 
 export default StyledScoreboard;
