@@ -31,21 +31,30 @@ const checkWin = (player, playground) => {
   );
 };
 
-export const BoxList = () => {
+export const BoxList = ({ updateScoreboard }) => {
   const [playground, setPlayground] = useState(Array(9).fill(""));
   const [player, setPlayer] = useState("x");
 
+  const resetPlayground = () => {
+    const voidArray = Array(9).fill("");
+    setPlayground(voidArray);
+    setPlayer(player);
+  };
+
   return (
     <StyledBoxList>
-      {playground?.map((box, boxNumber) => (
+      {playground.map((value, boxNumber) => (
         <Box
           key={boxNumber}
+          value={value}
           player={player}
           setPlayer={setPlayer}
           playground={playground}
           setPlayground={setPlayground}
           boxNumber={boxNumber}
           checkWin={checkWin}
+          updateScoreboard={updateScoreboard}
+          resetPlayground={resetPlayground}
         />
       ))}
     </StyledBoxList>

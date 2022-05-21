@@ -4,8 +4,9 @@ const StyledGame = styled.section`
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: relative;
   background: #0f0c29; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -19,11 +20,6 @@ const StyledGame = styled.section`
     #302b63,
     #0f0c29
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  .container-game {
-    width: 100%;
-    padding: 32px;
-  }
 `;
 
 export default StyledGame;
