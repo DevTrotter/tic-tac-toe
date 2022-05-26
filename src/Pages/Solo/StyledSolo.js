@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledGame = styled.section`
+const StyledSolo = styled.section`
   width: 100%;
   height: 100%;
   display: flex;
@@ -22,4 +22,4 @@ const StyledGame = styled.section`
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 `;
 
-export default StyledGame;
+export default StyledSolo;

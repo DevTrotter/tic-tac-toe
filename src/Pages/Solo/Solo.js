@@ -1,10 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { BoxList } from "../../Components/BoxList/BoxList";
 import { Scoreboard } from "../../Components/Scoreboard/Scoreboard";
 import { Layout } from "../../Layouts/Index";
-import StyledGame from "./StyledGame";
+import StyledSolo from "./StyledSolo";
 
-export const Game = () => {
+export const Solo = () => {
   const [score, setScore] = useState({
     x: 0,
     o: 0,
@@ -14,10 +14,10 @@ export const Game = () => {
   };
   return (
     <Layout>
-      <StyledGame>
+      <StyledSolo>
         <Scoreboard score={score} />
         <BoxList updateScoreboard={updateScoreboard} />
-      </StyledGame>
+      </StyledSolo>
     </Layout>
   );
 };

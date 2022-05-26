@@ -5,15 +5,17 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { Game } from "../Pages/Game/Game";
+import { Duo } from "../Pages/Duo/Duo";
 import { Home } from "../Pages/Home/Home";
+import { Solo } from "../Pages/Solo/Solo";
 
 export const Index = () => {
   return (
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/duo" element={<Game />} />
+        <Route exact path="/duo" element={<Duo />} />
+        <Route exact path="/solo" element={<Solo />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
